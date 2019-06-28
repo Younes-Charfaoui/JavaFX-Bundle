@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 @SuppressWarnings("unchecked")
 public class FXBundleTest {
@@ -24,11 +25,27 @@ public class FXBundleTest {
     }
 
     @Test
+    public void getKeys() {
+        FXBundle bundle = builder.putExtra("string", "hello honey")
+                .putExtra("list", list)
+                .putExtra("me", 1)
+                .putExtra("you", 0.0)
+                .build();
+        ArrayList<String> enumList = Collections.list(bundle.getKeys());
+        Assert.assertEquals(enumList.size(), 4);
+        Assert.assertTrue(enumList.contains("me"));
+        Assert.assertTrue(enumList.contains("list"));
+        Assert.assertTrue(enumList.contains("me"));
+        Assert.assertTrue(enumList.contains("you"));
+        Assert.assertFalse(enumList.contains("hello"));
+    }
+
+    @Test
     public void handleGetObject() {
         FXBundle bundle = builder.putExtra("string", "hello honey")
-                                 .putExtra("list", list)
-                                 .build();
-        Assert.assertEquals(bundle.handleGetObject("string"), "honey");
+                .putExtra("list", list)
+                .build();
+        Assert.assertEquals(bundle.handleGetObject("string"), "hello honey");
         ArrayList<Integer> arrayList = (ArrayList<Integer>) bundle.handleGetObject("list");
         Assert.assertEquals(arrayList.size(), 5);
         Assert.assertEquals(arrayList.size(), 5);
