@@ -79,7 +79,7 @@ public class FXBundle extends ResourceBundle {
         return Collections.enumeration(map.keySet());
     }
 
-    public class Builder {
+    public static class Builder {
 
         private FXBundle bundle;
 
