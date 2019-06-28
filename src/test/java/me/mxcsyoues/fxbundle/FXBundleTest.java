@@ -86,17 +86,37 @@ public class FXBundleTest {
 
     @Test
     public void getLongExtra() {
+        FXBundle bundle = builder.putExtra("FirstName", 2L)
+                .putExtra("LastName", 3L).build();
+        Assert.assertEquals(bundle.getLongExtra("FirstName", 3L), 2L);
+        Assert.assertEquals(bundle.getLongExtra("LastName", 2L), 3L);
+        Assert.assertEquals(bundle.getLongExtra("hiName", 5L), 5L);
     }
 
     @Test
     public void getIntExtra() {
+        FXBundle bundle = builder.putExtra("FirstName", 2)
+                .putExtra("LastName", 3).build();
+        Assert.assertEquals(bundle.getIntExtra("FirstName", 3), 2);
+        Assert.assertEquals(bundle.getIntExtra("LastName", 2), 3);
+        Assert.assertEquals(bundle.getIntExtra("hiName", 5), 5);
     }
 
     @Test
     public void getDoubleExtra() {
+        FXBundle bundle = builder.putExtra("FirstName", 2.0)
+                .putExtra("LastName", 3.0).build();
+        Assert.assertEquals(bundle.getDoubleExtra("FirstName", 3.0), 2.0, 0.0);
+        Assert.assertEquals(bundle.getDoubleExtra("LastName", 2.0), 3.0, 0.0);
+        Assert.assertEquals(bundle.getDoubleExtra("hiName", 5.0), 5.0, 0.0);
     }
 
     @Test
     public void getFloatExtra() {
+        FXBundle bundle = builder.putExtra("FirstName", 2f)
+                .putExtra("LastName", 3f).build();
+        Assert.assertEquals(bundle.getFloatExtra("FirstName", 3f), 2f, 0f);
+        Assert.assertEquals(bundle.getFloatExtra("LastName", 2f), 3f, 0f);
+        Assert.assertEquals(bundle.getFloatExtra("hiName", 5f), 5f, 0f);
     }
 }

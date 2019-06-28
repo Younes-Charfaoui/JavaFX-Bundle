@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af9bcca5-3e7c-4d57-b3ce-774dabdcbc06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +45,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2475">
-              <caret line="79" column="74" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="74" />
+            <state relative-caret-position="368">
+              <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+              <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
+              <caret line="96" column="41" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
               <folding>
                 <element signature="e#171#201#0" expanded="true" />
               </folding>
@@ -198,8 +199,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FXBundleTest.getStringExtra">
-    <configuration name="FXBundleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FXBundleTest.getLongExtra">
+    <configuration name="FXBundleTest.getDoubleExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javafx-bundle" />
       <extension name="coverage">
         <pattern>
@@ -209,28 +210,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
       <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXBundleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FXBundleTest.getBooleanExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javafx-bundle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="me.mxcsyoues.fxbundle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
-      <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXBundleTest" />
-      <option name="METHOD_NAME" value="getBooleanExtra" />
+      <option name="METHOD_NAME" value="getDoubleExtra" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FXBundleTest.getCharExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FXBundleTest.getFloatExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javafx-bundle" />
       <extension name="coverage">
         <pattern>
@@ -240,7 +226,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
       <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXBundleTest" />
-      <option name="METHOD_NAME" value="getCharExtra" />
+      <option name="METHOD_NAME" value="getFloatExtra" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FXBundleTest.getIntExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javafx-bundle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.mxcsyoues.fxbundle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
+      <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXBundleTest" />
+      <option name="METHOD_NAME" value="getIntExtra" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FXBundleTest.getLongExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javafx-bundle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.mxcsyoues.fxbundle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
+      <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXBundleTest" />
+      <option name="METHOD_NAME" value="getLongExtra" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -262,29 +280,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FXBundleTest.handleGetObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javafx-bundle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="me.mxcsyoues.fxbundle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
-      <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXBundleTest" />
-      <option name="METHOD_NAME" value="handleGetObject" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FXBundleTest.getLongExtra" />
+        <item itemvalue="JUnit.FXBundleTest.getIntExtra" />
+        <item itemvalue="JUnit.FXBundleTest.getFloatExtra" />
+        <item itemvalue="JUnit.FXBundleTest.getDoubleExtra" />
         <item itemvalue="JUnit.FXBundleTest.getStringExtra" />
-        <item itemvalue="JUnit.FXBundleTest.handleGetObject" />
-        <item itemvalue="JUnit.FXBundleTest.getCharExtra" />
-        <item itemvalue="JUnit.FXBundleTest" />
-        <item itemvalue="JUnit.FXBundleTest.getBooleanExtra" />
       </list>
     </recent_temporary>
   </component>
@@ -299,20 +301,11 @@
       <option name="presentableId" value="Default" />
       <updated>1561736863801</updated>
       <workItem from="1561736875663" duration="3580000" />
-      <workItem from="1561740918068" duration="3285000" />
+      <workItem from="1561740918068" duration="3597000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FXBundleTest - 2019.06.28 at 18h 31m 58s.xml">
-      <configuration name="FXBundleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FXBundleTest - 2019.06.28 at 18h 32m 24s.xml">
-      <configuration name="FXBundleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FXBundleTest_getBooleanExtra - 2019.06.28 at 18h 32m 53s.xml">
-      <configuration name="FXBundleTest.getBooleanExtra" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FXBundleTest - 2019.06.28 at 18h 36m 58s.xml">
       <configuration name="FXBundleTest" configurationId="JUnit" />
     </history-entry>
@@ -328,9 +321,24 @@
     <history-entry file="FXBundleTest_getStringExtra - 2019.06.28 at 18h 59m 32s.xml">
       <configuration name="FXBundleTest.getStringExtra" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FXBundleTest_getFloatExtra - 2019.06.28 at 20h 08m 56s.xml">
+      <configuration name="FXBundleTest.getFloatExtra" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FXBundleTest_getDoubleExtra - 2019.06.28 at 20h 09m 54s.xml">
+      <configuration name="FXBundleTest.getDoubleExtra" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FXBundleTest_getDoubleExtra - 2019.06.28 at 20h 10m 55s.xml">
+      <configuration name="FXBundleTest.getDoubleExtra" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FXBundleTest_getFloatExtra - 2019.06.28 at 20h 11m 03s.xml">
+      <configuration name="FXBundleTest.getFloatExtra" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FXBundleTest_getFloatExtra - 2019.06.28 at 20h 11m 53s.xml">
+      <configuration name="FXBundleTest.getFloatExtra" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6865000" />
+    <option name="totallyTimeSpent" value="7177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -346,7 +354,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.7266776" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7266776" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,8 +424,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="79" column="74" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="74" />
+        <state relative-caret-position="368">
+          <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+          <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
+          <caret line="96" column="41" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
           <folding>
             <element signature="e#171#201#0" expanded="true" />
           </folding>
