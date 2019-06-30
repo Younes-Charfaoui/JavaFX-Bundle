@@ -24,10 +24,4 @@ public class FXMLBundleLoaderTest {
         Assert.assertEquals(loader.getBundle().size(), 5);
         Assert.assertEquals(loader.getBundle().getStringExtra("String", ""), "String");
     }
-
-    @Test
-    public void buildAndLoad() throws IOException {
-        FXMLBundleLoader loader = new FXMLBundleLoader(getClass().getResource(""));
-        Parent parent = loader.buildAndLoad();
-    }
 }
