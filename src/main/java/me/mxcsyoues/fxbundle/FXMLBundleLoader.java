@@ -5,6 +5,13 @@ import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 import java.net.URL;
 
+
+/**
+ * Loads an object hierarchy from an XML document associated with bundle
+ * to the controller via i
+ * @since JavaFX 2.0
+ */
+@SuppressWarnings({"unused", "WeakerAccess", "UnusedReturnValue"})
 public class FXMLBundleLoader {
 
     private URL location;

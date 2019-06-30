@@ -2,6 +2,11 @@ package me.mxcsyoues.fxbundle;
 
 import java.util.*;
 
+/**
+ * Store data passed to the controller in a {@link ResourceBundle} object
+ * in a {key => value} mapping.
+ */
+@SuppressWarnings("WeakerAccess")
 public class FXBundle extends ResourceBundle {
 
     private Map<String, Object> map;
@@ -10,10 +15,18 @@ public class FXBundle extends ResourceBundle {
         map = new HashMap<String, Object>();
     }
 
+    /**
+     * Return the number of key value pair in the bundle.
+     * @return number of key value pair in the bundle .
+     */
     public int size() {
         return map.size();
     }
 
+    /**
+     * Removes all of the key value pairs from this bundle.
+     * The bundle will be empty after this call returns.
+     */
     public void clear() {
         map.clear();
     }
@@ -77,6 +90,42 @@ public class FXBundle extends ResourceBundle {
     public float getFloatExtra(String key, float defaultValue) {
         if (!(map.get(key) instanceof Float) || map.get(key) == null)
             return defaultValue;
+        return (Float) map.get(key);
+    }
+
+    public boolean getBooleanExtra(String key) {
+        return (Boolean) map.get(key);
+    }
+
+    public byte getByteExtra(String key) {
+        return (Byte) map.get(key);
+    }
+
+    public char getCharExtra(String key) {
+        return (Character) map.get(key);
+    }
+
+    public String getStringExtra(String key) {
+        return (String) map.get(key);
+    }
+
+    public short getShortExtra(String key) {
+        return (Short) map.get(key);
+    }
+
+    public long getLongExtra(String key) {
+        return (Long) map.get(key);
+    }
+
+    public int getIntExtra(String key) {
+        return (Integer) map.get(key);
+    }
+
+    public double getDoubleExtra(String key) {
+        return (Double) map.get(key);
+    }
+
+    public float getFloatExtra(String key) {
         return (Float) map.get(key);
     }
 

@@ -1,6 +1,5 @@
 package me.mxcsyoues.fxbundle;
 
-import javafx.scene.Parent;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
