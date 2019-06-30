@@ -15,47 +15,52 @@ public class FXMLBundleLoader {
         this.bundleBuilder = new FXBundle.Builder();
     }
 
-    private FXMLBundleLoader addExtra(String key, Object value) {
+    public FXMLBundleLoader addExtra(String key, Object value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
 
-    private FXMLBundleLoader addExtra(String key, boolean value) {
+
+    public FXBundle getBundle() {
+        return bundleBuilder.build();
+    }
+
+    public FXMLBundleLoader addExtra(String key, boolean value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
 
-    private FXMLBundleLoader addExtra(String key, String value) {
+    public FXMLBundleLoader addExtra(String key, String value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
 
-    private FXMLBundleLoader addExtra(String key, byte value) {
+    public FXMLBundleLoader addExtra(String key, byte value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
 
-    private FXMLBundleLoader addExtra(String key, char value) {
+    public FXMLBundleLoader addExtra(String key, char value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
 
-    private FXMLBundleLoader addExtra(String key, long value) {
+    public FXMLBundleLoader addExtra(String key, long value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
 
-    private FXMLBundleLoader addExtra(String key, int value) {
+    public FXMLBundleLoader addExtra(String key, int value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
 
-    private FXMLBundleLoader addExtra(String key, double value) {
+    public FXMLBundleLoader addExtra(String key, double value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
 
-    private FXMLBundleLoader addExtra(String key, float value) {
+    public FXMLBundleLoader addExtra(String key, float value) {
         bundleBuilder.putExtra(key, value);
         return this;
     }
