@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="af9bcca5-3e7c-4d57-b3ce-774dabdcbc06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLBundleLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLBundleLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLBundleLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="329">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -34,31 +36,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="121" column="54" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="54" />
-              <caret line="126" column="57" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="57" />
-              <caret line="131" column="56" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLBundleLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="230">
+              <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLBundleLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="2483" column="20" lean-forward="true" selection-start-line="2483" selection-start-column="20" selection-end-line="2483" selection-end-column="20" />
+            <state relative-caret-position="362">
+              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXMLBundleLoaderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <folding>
+                <element signature="e#165#195#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +95,8 @@
     <findStrings>
       <find>void</find>
       <find>l</find>
-      <find>load</find>
       <find>name</find>
+      <find>load</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,11 +105,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLBundleLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXMLBundleLoaderTest.java" />
       </list>
     </option>
   </component>
@@ -233,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FXBundleTest">
+  <component name="RunManager" selected="JUnit.FXMLBundleLoaderTest">
     <configuration name="FXBundleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javafx-bundle" />
       <extension name="coverage">
@@ -249,7 +267,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FXBundleTest.getFloatExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FXBundleTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javafx-bundle" />
       <extension name="coverage">
         <pattern>
@@ -259,23 +277,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
       <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXBundleTest" />
-      <option name="METHOD_NAME" value="getFloatExtra" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FXBundleTest.getIntExtra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javafx-bundle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="me.mxcsyoues.fxbundle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
-      <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXBundleTest" />
-      <option name="METHOD_NAME" value="getIntExtra" />
+      <option name="METHOD_NAME" value="clear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -313,13 +315,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FXMLBundleLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javafx-bundle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.mxcsyoues.fxbundle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.mxcsyoues.fxbundle" />
+      <option name="MAIN_CLASS_NAME" value="me.mxcsyoues.fxbundle.FXMLBundleLoaderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FXMLBundleLoaderTest" />
         <item itemvalue="JUnit.FXBundleTest" />
+        <item itemvalue="JUnit.FXBundleTest.clear" />
         <item itemvalue="JUnit.FXBundleTest.getKeys" />
         <item itemvalue="JUnit.FXBundleTest.getLongExtra" />
-        <item itemvalue="JUnit.FXBundleTest.getIntExtra" />
-        <item itemvalue="JUnit.FXBundleTest.getFloatExtra" />
       </list>
     </recent_temporary>
   </component>
@@ -335,23 +352,11 @@
       <updated>1561736863801</updated>
       <workItem from="1561736875663" duration="3580000" />
       <workItem from="1561740918068" duration="8021000" />
-      <workItem from="1561890659891" duration="2170000" />
+      <workItem from="1561890659891" duration="5921000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FXBundleTest_getIntExtra - 2019.06.28 at 20h 13m 03s.xml">
-      <configuration name="FXBundleTest.getIntExtra" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FXBundleTest_getLongExtra - 2019.06.28 at 20h 14m 02s.xml">
-      <configuration name="FXBundleTest.getLongExtra" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FXBundleTest - 2019.06.28 at 20h 45m 59s.xml">
-      <configuration name="FXBundleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FXBundleTest - 2019.06.28 at 20h 46m 18s.xml">
-      <configuration name="FXBundleTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FXBundleTest - 2019.06.28 at 20h 46m 37s.xml">
       <configuration name="FXBundleTest" configurationId="JUnit" />
     </history-entry>
@@ -370,16 +375,28 @@
     <history-entry file="FXBundleTest - 2019.06.28 at 21h 04m 32s.xml">
       <configuration name="FXBundleTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FXBundleTest_clear - 2019.06.30 at 17h 15m 12s.xml">
+      <configuration name="FXBundleTest.clear" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FXBundleTest - 2019.06.30 at 17h 15m 31s.xml">
+      <configuration name="FXBundleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FXBundleTest - 2019.06.30 at 17h 16m 07s.xml">
+      <configuration name="FXBundleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FXMLBundleLoaderTest - 2019.06.30 at 17h 16m 46s.xml">
+      <configuration name="FXMLBundleLoaderTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13771000" />
+    <option name="totallyTimeSpent" value="17522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.25340393" />
+      <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.25340393" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -395,7 +412,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.8101473" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -438,46 +455,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2490">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        <state relative-caret-position="230">
+          <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
           <folding>
-            <element signature="e#171#201#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1061">
+          <caret line="2407" column="15" selection-start-line="2407" selection-start-column="15" selection-end-line="2407" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLBundleLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="329">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXBundleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="2483" column="20" lean-forward="true" selection-start-line="2483" selection-start-column="20" selection-end-line="2483" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="121" column="54" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="54" />
-          <caret line="126" column="57" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="57" />
-          <caret line="131" column="56" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/mxcsyoues/fxbundle/FXMLBundleLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state relative-caret-position="132">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#165#195#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/me/mxcsyoues/fxbundle/FXMLBundleLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
