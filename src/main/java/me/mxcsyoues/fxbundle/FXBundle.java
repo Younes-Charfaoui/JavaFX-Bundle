@@ -10,6 +10,14 @@ public class FXBundle extends ResourceBundle {
         map = new HashMap<String, Object>();
     }
 
+    public int size() {
+        return map.size();
+    }
+
+    public void clear() {
+        map.clear();
+    }
+
     private void addParameter(String key, Object value) {
         map.put(key, value);
     }
@@ -82,6 +90,11 @@ public class FXBundle extends ResourceBundle {
 
         public Builder() {
             this.bundle = new FXBundle();
+        }
+
+        public Builder clear() {
+            bundle.clear();
+            return this;
         }
 
         public Builder putExtra(String name, Object value) {
