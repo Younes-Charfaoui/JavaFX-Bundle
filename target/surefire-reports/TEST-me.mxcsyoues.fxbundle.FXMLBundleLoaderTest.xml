@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="me.mxcsyoues.fxbundle.FXBundleTest" time="0.04" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="me.mxcsyoues.fxbundle.FXMLBundleLoaderTest" time="0.012" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_73\jre\bin"/>
@@ -62,17 +62,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getByteExtra" time="0.024"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getIntExtra" time="0"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getFloatExtra" time="0"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getKeys" time="0"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="size" time="0.004"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getLongExtra" time="0"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="clear" time="0"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getBooleanExtra" time="0.004"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getShortExtra" time="0.004"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getCharExtra" time="0"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="handleGetObject" time="0.004"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getDoubleExtra" time="0"/>
-  <testcase classname="me.mxcsyoues.fxbundle.FXBundleTest" name="getStringExtra" time="0"/>
+  <testcase classname="me.mxcsyoues.fxbundle.FXMLBundleLoaderTest" name="buildAndLoad" time="0.008"/>
+  <testcase classname="me.mxcsyoues.fxbundle.FXMLBundleLoaderTest" name="addExtra" time="0.004"/>
 </testsuite>
