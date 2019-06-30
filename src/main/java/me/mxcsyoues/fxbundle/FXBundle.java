@@ -1,7 +1,5 @@
 package me.mxcsyoues.fxbundle;
 
-import com.sun.istack.internal.Nullable;
-
 import java.util.*;
 
 public class FXBundle extends ResourceBundle {
@@ -16,7 +14,6 @@ public class FXBundle extends ResourceBundle {
         map.put(key, value);
     }
 
-    @Nullable
     protected Object handleGetObject(String key) {
         return map.get(key);
     }
