@@ -2,7 +2,10 @@ package me.mxcsyoues.fxbundle;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,6 +25,31 @@ public class FXBundleTest {
         list.add(7);
         list.add(9);
         list.add(10);
+    }
+
+    @Test
+    public void size() {
+        FXBundle bundle = builder.putExtra("string", "hello honey")
+                .putExtra("list", list)
+                .putExtra("me", 1)
+                .putExtra("you", 0.0)
+                .putExtra("hi", 0L)
+                .build();
+        Assert.assertEquals(bundle.size(), 5);
+        bundle = builder.clear().build();
+        Assert.assertEquals(bundle.size(), 0);
+    }
+
+    @Test
+    public void clear() {
+        FXBundle bundle = builder.putExtra("string", "hello honey")
+                .putExtra("list", list)
+                .putExtra("me", 1)
+                .putExtra("you", 0.0)
+                .build();
+        Assert.assertEquals(bundle.size(), 4);
+        bundle = builder.clear().build();
+        Assert.assertEquals(bundle.size(), 0);
     }
 
     @Test
