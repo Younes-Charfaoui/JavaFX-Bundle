@@ -15,8 +15,13 @@ public class FXBundle extends ResourceBundle {
         map = new HashMap<String, Object>();
     }
 
+    public FXBundle(Map<String, Object> map) {
+        this.map = map;
+    }
+
     /**
      * Return the number of key value pair in the bundle.
+     *
      * @return number of key value pair in the bundle .
      */
     public int size() {

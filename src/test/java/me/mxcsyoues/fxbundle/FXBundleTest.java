@@ -6,6 +6,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 @SuppressWarnings("unchecked")
 public class FXBundleTest {
@@ -22,6 +24,19 @@ public class FXBundleTest {
         list.add(7);
         list.add(9);
         list.add(10);
+    }
+
+    @Test
+    public void mapConstructor() {
+        Map<String, Object> map = new HashMap();
+        map.put("string", "younes");
+        map.put("int", -5);
+        map.put("double", 2.0);
+
+        FXBundle bundle = new FXBundle(map);
+        Assert.assertEquals(bundle.getStringExtra("string"), "younes");
+        Assert.assertEquals(bundle.getIntExtra("int"), -5);
+        Assert.assertEquals(bundle.getDoubleExtra("double"), 2.0, 0.0);
     }
 
     @Test
