@@ -5,6 +5,12 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * This class should be extended by other javafx controller instead
+ * of implementing {@link Initializable} in order to get the
+ * FxBundle object in the initialization of the controller so you can
+ * get your stuff back after passing them.
+ */
 @SuppressWarnings({"WeakerAccess", "unused"})
 public abstract class FXBundleController implements Initializable {
 
