@@ -11,26 +11,27 @@ import java.util.ResourceBundle;
  * FxBundle object in the initialization of the controller so you can
  * get your stuff back after passing them.
  */
-@SuppressWarnings({"WeakerAccess", "unused"})
+@SuppressWarnings({"unused"})
 public abstract class FXBundleController implements Initializable {
 
     public final void initialize(URL location, ResourceBundle resources) {
-        if (resources instanceof FXBundle)
-            initializeController(location, (FXBundle) resources);
-        else
-            throw new IllegalStateException("resources was instance of " + resources.getClass().getName() + " and not instance of FXBundle");
+        if (resources == null) {
+            initializeController(location, null);
+        } else {
+            if (resources instanceof FXBundle)
+                initializeController(location, (FXBundle) resources);
+            else
+                throw new IllegalStateException("resources was instance of " + resources.getClass().getName() + " and not instance of FXBundle");
+        }
     }
 
     /**
      * Called by initialize of {@link Initializable} to initialize a controller after its root element has been
      * completely processed.
      *
-     * @param location
-     * The location used to resolve relative paths for the root object, or
-     * <tt>null</tt> if the location is not known.
-     *
-     * @param bundle
-     * The bundle that contains your passed data to this controller.
+     * @param location The location used to resolve relative paths for the root object, or
+     *                 <tt>null</tt> if the location is not known.
+     * @param bundle   The bundle that contains your passed data to this controller.
      */
     public abstract void initializeController(URL location, FXBundle bundle);
 }
