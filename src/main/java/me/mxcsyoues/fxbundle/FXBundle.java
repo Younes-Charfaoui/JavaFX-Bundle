@@ -251,6 +251,10 @@ public class FXBundle extends ResourceBundle {
         return Collections.enumeration(map.keySet());
     }
 
+    /**
+     * Builder class for the purpose of creating an FxBundle Object
+     * that hold some values.
+     */
     public static class Builder {
 
         private FXBundle bundle;
@@ -259,61 +263,129 @@ public class FXBundle extends ResourceBundle {
             this.bundle = new FXBundle();
         }
 
+        /**
+         * Clear the current builder object from it's values.
+         * @return current instance of the Builder object cleared.
+         */
         public Builder clear() {
             bundle.clear();
             return this;
         }
 
+        /**
+         * Add more data to the builder in Object form.
+         * @param name the key of the new extra.
+         * @param value the Object value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, Object value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in Boolean form.
+         * @param name the key of the new extra.
+         * @param value the Boolean value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, boolean value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in Byte form.
+         * @param name the key of the new extra.
+         * @param value the Byte value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, byte value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in Character form.
+         * @param name the key of the new extra.
+         * @param value the Character value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, char value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in String form.
+         * @param name the key of the new extra.
+         * @param value the String value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, String value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in Short form.
+         * @param name the key of the new extra.
+         * @param value the Short value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, short value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in Long form.
+         * @param name the key of the new extra.
+         * @param value the Long value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, long value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in Integer form.
+         * @param name the key of the new extra.
+         * @param value the Integer value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, int value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in Double form.
+         * @param name the key of the new extra.
+         * @param value the Double value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, double value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Add more data to the builder in Float form.
+         * @param name the key of the new extra.
+         * @param value the Float value associated with the name as an extra.
+         * @return current instance of the Builder object.
+         */
         public Builder putExtra(String name, float value) {
             bundle.addParameter(name, value);
             return this;
         }
 
+        /**
+         * Build the current Builder to {@link FXBundle} object.
+         * @return an {@link FXBundle} object with the values passed throughout the {@link Builder}.
+         */
         public FXBundle build() {
             return this.bundle;
         }

@@ -93,6 +93,18 @@ public class FXBundleTest {
     }
 
     @Test
+    public void getObjectExtra() {
+        FXBundle bundle = builder.putExtra("string", "hello honey")
+                .putExtra("list", list)
+                .build();
+        Assert.assertEquals(bundle.getObjectExtra("string"), "hello honey");
+        ArrayList<Integer> arrayList = (ArrayList<Integer>) bundle.getObjectExtra("list");
+        Assert.assertEquals(arrayList.size(), 5);
+        Assert.assertEquals(arrayList.size(), 5);
+        Assert.assertEquals((int) arrayList.get(3), 9);
+    }
+
+    @Test
     public void getBooleanExtra() {
         FXBundle bundle = builder.putExtra("true", true).putExtra("false", false).build();
         Assert.assertTrue(bundle.getBooleanExtra("true", false));
