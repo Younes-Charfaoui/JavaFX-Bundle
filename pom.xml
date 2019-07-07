@@ -7,6 +7,8 @@
     <groupId>me.mxcsyounes</groupId>
     <artifactId>javafx-bundle</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -21,5 +23,29 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>JavaFX library to help passing parameter and values between controllers.</description>
+    <url>https://github.com/Younes-Charfaoui/JavaFX-Bundle-Loader/</url>
+
+    <developers>
+        <developer>
+            <name>Younes Charfaoui</name>
+            <email>mxcsyounes@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/Younes-Charfaoui/JavaFX-Bundle.git</connection>
+        <developerConnection>scm:git:ssh://github.com/Younes-Charfaoui/JavaFX-Bundle.git</developerConnection>
+        <url>https://github.com/Younes-Charfaoui/JavaFX-Bundle/tree/master</url>
+    </scm>
 
 </project>
