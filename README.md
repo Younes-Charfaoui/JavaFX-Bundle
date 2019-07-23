@@ -1,286 +1,83 @@
 # JavaFX Bundle
-JavaFX Bundle is an Android Library that helps you pass parameters between controller in your JavaFX application.
 
-## Usage
+JavaFX Bundle is Mini-Library that helps you pass parameters betweens in your JavaFX application without using static parameters and other old techniques..
 
-### Basic usage
+## Getting Started
 
-1. **Add the JitPack repository to your build file**
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
- Add it in your root build.gradle at the end of repositories:
-```gradle
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+### Prerequisites
+
+Just a running machine with JDK installed and a simple IDE that let you import JAR files. 
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+```
+Give the example
 ```
 
-2. **Add the dependency**
+And repeat
 
-Please note that AppIntro supports [Android X](https://developer.android.com/jetpack/androidx/). If you haven't migrated yet, you probably want to use
-a previous version of the library that uses the **old Support Library** packages (or try [Jetifier Reverse mode](https://ncorti.com/blog/jetifier-reverse)).
-
-```gradle
-	dependencies {
-	        // AndroidX Capable version
-	        implementation 'com.github.AppIntro:AppIntro:5.1.0'
-	        
-	        // *** OR ***
-	        
-	        // Support Library compatibility version 
-	        implementation 'com.github.AppIntro:AppIntro:4.2.3'
-	}
+```
+until finished
 ```
 
-Create a new **Activity that extends AppIntro**:
+End with an example of getting some data out of the system or using it for a little demo
 
-```java
-public class IntroActivity extends AppIntro {
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+## Running the tests
 
-        // Note here that we DO NOT use setContentView();
+Explain how to run the automated tests for this system
 
-        // Add your slide fragments here.
-        // AppIntro will automatically generate the dots indicator and buttons.
-        addSlide(firstFragment);
-        addSlide(secondFragment);
-        addSlide(thirdFragment);
-        addSlide(fourthFragment);
+### Break down into end to end tests
 
-        // Instead of fragments, you can also use our default slide.
-        // Just create a `SliderPage` and provide title, description, background and image.
-        // AppIntro will do the rest.
-        SliderPage sliderPage = new SliderPage();
-        sliderPage.setTitle(title);
-        sliderPage.setDescription(description);
-        sliderPage.setImageDrawable(image);
-        sliderPage.setBgColor(backgroundColor);
-        addSlide(AppIntroFragment.newInstance(sliderPage));
+Explain what these tests test and why
 
-        // OPTIONAL METHODS
-        // Override bar/separator color.
-        setBarColor(Color.parseColor("#3F51B5"));
-        setSeparatorColor(Color.parseColor("#2196F3"));
-
-        // Hide Skip/Done button.
-        showSkipButton(false);
-        setProgressButtonEnabled(false);
-
-        // Turn vibration on and set intensity.
-        // NOTE: you will probably need to ask VIBRATE permission in Manifest.
-        setVibrate(true);
-        setVibrateIntensity(30);
-    }
-
-    @Override
-    public void onSkipPressed(Fragment currentFragment) {
-        super.onSkipPressed(currentFragment);
-        // Do something when users tap on Skip button.
-    }
-
-    @Override
-    public void onDonePressed(Fragment currentFragment) {
-        super.onDonePressed(currentFragment);
-        // Do something when users tap on Done button.
-    }
-
-    @Override
-    public void onSlideChanged(@Nullable Fragment oldFragment, @Nullable Fragment newFragment) {
-        super.onSlideChanged(oldFragment, newFragment);
-        // Do something when the slide changes.
-    }
-}
+```
+Give an example
 ```
 
-_Note above that we DID NOT use setContentView();_
+### And coding style tests
 
-Finally, declare the activity in your Manifest like so:
+Explain what these tests test and why
 
-``` xml
-<activity android:name="com.example.example.intro"
-    android:label="@string/app_intro" />
+```
+Give an example
 ```
 
-Do not declare the intro as your main app launcher unless you want the intro to launch every time your app starts.
-Refer to the [wiki](https://github.com/AppIntro/AppIntro/wiki/How-to-Use#show-the-intro-once) for an example of how to launch the intro once from your main activity.
+## Deployment
 
-#### Alternative layout
-If you want to try an alternative layout (as seen in Google's Photo app), just extend **AppIntro2** in your Activity. That's all :)
+Add additional notes about how to deploy this on a live system
 
-```java
-public class IntroActivity extends AppIntro2 {
-    // ...
-}
-```
+## Built With
 
-<img src="https://github.com/AppIntro/AppIntro/blob/master/art/layout2.png" width="300"> <img src="https://github.com/AppIntro/AppIntro/blob/master/art/layout2_2.png" width="300">
-<br>
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-#### Slides
+## Contributing
 
-##### Basic slides
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-AppIntro provides two simple classes, `AppIntroFragment` and `AppIntro2Fragment` which one can use to build simple slides.
+## Versioning
 
-```java
-@Override
-protected void onCreate(@Nullable Bundle savedInstanceState) {
-    // ...
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-    addSlide(AppIntroFragment.newInstance(title, description, image, backgroundColor));
-}
-```
+## Authors
 
-##### Custom slides example
+* **Younes Charfaoui** - *Initial work* - [Younes Charfaoui](https://github.com/Younes-Charfaoui)
 
-One may also define custom slides as seen in the example project:
- * Copy the class **SampleSlide** from my [example project](https://github.com/AppIntro/AppIntro/blob/master/example/src/main/java/com/amqtech/opensource/appintroexample/util/SampleSlide.java).
- * Add a new slide with `addSlide(SampleSlide.newInstance(R.layout.your_slide_here));`
+See also the list of [contributors](https://github.com/Younes-Charfaoui/JavaFX-Bundle/graphs/contributors) who participated in this project.
 
-There's no need to create one class for fragment anymore. :)
+## License
 
-### Extended usage
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-#### Animations
-AppIntro comes with some pager animations.
-Choose the one you like and then activate it with:
+## Acknowledgments
 
-```java
-@Override
-protected void onCreate(@Nullable Bundle savedInstanceState) {
-    // ...
-
-    setFadeAnimation();
-}
-```
-
-Available animations:
-```java
-setFadeAnimation()
-setZoomAnimation()
-setFlowAnimation()
-setSlideOverAnimation()
-setDepthAnimation()
-```
-
-If you want to create nice parallax effect or your own custom animation, create your own **PageTransformer** and call:
-
-```java
-@Override
-protected void onCreate(@Nullable Bundle savedInstanceState) {
-    // ...
-
-    setCustomTransformer(transformer);
-}
-```
-
-Click [here](https://github.com/AppIntro/AppIntro/blob/90a513fda9b70a5e5df35435a7f2984832727eeb/AppIntroExample/app/src/main/java/com/github/paolorotolo/appintroexample/animations/CustomAnimation.java) to see how I did it in the example app.
-
-#### Background color transitions
-
-AppIntro supports background color transitions:
-
-<img src="art/background_color_transition.gif" style="width: 250px">
-
-In order to setup the transitions, simply implement `ISlideBackgroundColorHolder`:
-```java
-public final class MySlide extends Fragment implements ISlideBackgroundColorHolder {
-    @Override
-    public int getDefaultBackgroundColor() {
-        // Return the default background color of the slide.
-        return Color.parseColor("#000000");
-    }
-
-    @Override
-    public void setBackgroundColor(@ColorInt int backgroundColor) {
-        // Set the background color of the view within your slide to which the transition should be applied.
-        if (layoutContainer != null) {
-            layoutContainer.setBackgroundColor(backgroundColor);
-        }
-    }
-}
-```
-
-The API is quite low-level, therefore highly customizable. The interface contains two methods:
-
-- `getDefaultBackgroundColor`: Return the default background color (i.e. the background color the slide has in non-sliding state) of the slide here.
-- `setBackgroundColor(int)`: This method will be called while swiping between two slides. Update the background color of the view to which the transition should be applied.
-This is normally the root view of your Fragment's layout. But one may also apply the color transition to some other view only (i.e. a Button).
-
-#### Runtime Permissions (Android 6.0+)
-
-<img src="https://github.com/AppIntro/AppIntro/blob/master/art/permissions.png" width="300">
-
-Android 6.0 introduced a new permissions model for developers. Now all your apps have to request permissions which can be a tedious thing to implement.
-
-However, AppIntro simplifies this down to one single line of code!
-
-```java
-@Override
-protected void onCreate(@Nullable Bundle savedInstanceState) {
-    // ...
-
-    // Ask for CAMERA permission on the second slide
-    askForPermissions(new String[]{Manifest.permission.CAMERA}, 2); // OR
-
-    // This will ask for the camera permission AND the contacts permission on the same slide.
-    // Ensure your slide talks about both so as not to confuse the user.
-    askForPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_CONTACTS}, 2);
-}
-```
-
-**NOTE:** It is advised that you only put one permission in the String array unless you want the app to ask for multiple permissions on the same slide.
-
-**NOTE 2:** Requesting permissions automatically disables sliding, and users will have to result to pressing the buttons. Please do not open any issues regarding this, as they will be immmediately closed. Thanks!
-
-#### Slide Policies
-
-If you want to restrict navigation between your slides (i.e. the user has to toggle a checkbox in order to continue), our **Slide Policy** feature might help you.
-
-All you have to do is implement `ISlidePolicy` in your slides:
-```java
-public final class MySlide extends Fragment implements ISlidePolicy {
-    @Override
-    public boolean isPolicyRespected() {
-        return // If user should be allowed to leave this slide
-    }
-
-    @Override
-    public void onUserIllegallyRequestedNextPage() {
-        // User illegally requested next slide
-    }
-}
-```
-The interface contains two methods:
-
-- `isPolicyRespected`: The return value of this method defines if the user can leave this slide, i.e. navigate to another one
-- `onUserIllegallyRequestedNextPage`: This method gets called if the user tries to leave the slide although `isPolicyRespected` returned false. One may show some error message here.
-
-## Translating
-
-Do you want to help AppIntro becoming international 🌍? We are more than happy!
-AppIntro currently supports [the following languages](appintro/src/main/res).
-
-To add a new translation just add a pull request with a new `strings.xml` file inside a `values-xx` folder (where `xx` is a [two-letter ISO 639-1 language code](https://en.wikipedia.org/wiki/ISO_639-1)).
-
-In order to provide the translation, your file needs to contain the following strings:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_intro_skip_button">[Translation for SKIP]</string>
-    <string name="app_intro_next_button">[Translation for NEXT]</string>
-    <string name="app_intro_back_button">[Translation for BACK]</string>
-    <string name="app_intro_done_button">[Translation for DONE]</string>
-    <string name="app_intro_image_content_description">[Translation for "graphics"]</string>
-</resources>
-```
-
-An updated version of the english version translation is [available here](appintro/src/main/res/values/strings.xml).
-
-## Example App
-See example code [here](https://github.com/AppIntro/AppIntro/tree/master/example) on GitHub. You can also see it live by downloading our example on [Google Play](https://play.google.com/store/apps/details?id=com.amqtech.opensource.appintroexample).
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
