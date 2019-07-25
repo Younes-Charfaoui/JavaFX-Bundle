@@ -1,4 +1,6 @@
 # JavaFX Bundle
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com) 
+![](https://img.shields.io/badge/lisence-MIT-blue) ![](https://img.shields.io/badge/version-1.0.0-green)
 
 ![Logo Image](https://github.com/Younes-Charfaoui/JavaFX-Bundle/blob/master/logos/logo_bundles.png)
 
@@ -35,6 +37,7 @@ Explain how to run the automated tests for this system
 ## Authors
 
 * **Younes Charfaoui** - *Initial work* - [Younes Charfaoui](https://github.com/Younes-Charfaoui)
+*  **Houari Zegai** - *Testing* - [Houari Zegai](https://github.com/HouariZegai)
 
 See also the list of [contributors](https://github.com/Younes-Charfaoui/JavaFX-Bundle/graphs/contributors) who participated in this project.
 
