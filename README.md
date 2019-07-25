@@ -1,5 +1,7 @@
 # JavaFX Bundle
 
+![Logo Image](https://github.com/Younes-Charfaoui/JavaFX-Bundle/blob/master/logos/logo_bundles.png)
+
 **JavaFX Bundle** is Mini-Library that helps you pass parameters and objects between the controllers in your JavaFX application without using static parameters and other old techniques.
 
 ## Getting Started
