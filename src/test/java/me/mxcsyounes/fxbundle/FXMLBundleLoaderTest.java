@@ -1,4 +1,4 @@
-package me.mxcsyoues.fxbundle;
+package me.mxcsyounes.fxbundle;
 
 import org.junit.Assert;
 import org.junit.Test;
