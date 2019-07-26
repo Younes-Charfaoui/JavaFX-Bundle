@@ -25,9 +25,30 @@ Now you can have fun with your objects passed everywhere in your JavaFX Applicat
 
 #### 1- Create Bundle Object
 
-Explain how to run the automated tests for this system
+In order to pass some parameters you need to create an object called `FXBundle`, this on object will be passed between the controllers,
+to create this object you have two options:
+##### 1- The Builder Way:
+You can use the Builder Object of this FXBundle and then use this builder to 
+
+````java
+// create new Builder instance.
+FXBundle.Builder bundleBuilder = new FXBundle.Builder();
+// build the object.
+FXBundle bundle = bundleBuilder.build();
+````
+
+##### 1- The Map Way:
+another way to create the FXBundle Object is throught a constructor that accept a map of type String => Object 
+
+````java
+// create a simple hash map.
+Map<String, Object> map = new HashMap<>();
+// create an instance with this map.
+FXBundle bundle = new FXBundle(map);
+````
 
 #### 2- Fill out the Bundle
+
 
 #### 3- Pass the Bundle
 
