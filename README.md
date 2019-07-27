@@ -48,11 +48,42 @@ FXBundle bundle = new FXBundle(map);
 ````
 
 #### 2- Fill out the Bundle
+you can fill out the bundle object from the map passed by the default `put` function like the following:
 
+````java
+// create a simple hash map.
+Map<String, Object> map = new HashMap<>();
+map.put("username", "younes");
+map.put("password", "12345678abcd");
+map.put("id", 12);
+// create an instance with this map.
+FXBundle bundle = new FXBundle(map);
+````
+
+or throughout the Builder object using the `putExtra` function that let you pass any kind of object like the following:
+
+````java
+FXBundle bundle = new FXBundle.Builder()
+                .putExtra("hi", "hi")
+                .putExtra("int", 2)
+                .build();
+````
 
 #### 3- Pass the Bundle
+In the final step, you can simply pass this object in the 2nd parameter of the `load` function from the FXMLLoader
 
-#### 4- Extends the FXBundleController 
+```java
+FXBundle bundle = new FXBundle.Builder()
+                .putExtra("username", "younes")
+                .putExtra("id", 3)
+                .build();
+Pane pane = FXMLLoader.load(..., bundle);
+```
+
+#### 4 - Get back your passed things
+ 
+
+#### 5- Extends the FXBundleController (Optional) 
 
 
 ## Authors
