@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-Follow this instructions to start using the library in your JavaFX projects.
+Follow these instructions to start using the library in your JavaFX projects.
 
 ### Prerequisites
 
@@ -16,7 +16,7 @@ You will need just a running machine with JDK installed and a simple IDE that le
 
 ### Installing
 
-Go under the [release ](https://github.com/Younes-Charfaoui/JavaFX-Bundle/releases) section and download the latest library in JAR file format, 
+Go under the [release](https://github.com/Younes-Charfaoui/JavaFX-Bundle/releases) section and download the latest library in JAR file format, 
 then throughout your IDE (I prefer IntelliJ IDEA) add the JAR file to the project. 
 
 Now you can have fun with your objects passed everywhere in your JavaFX Application. 
@@ -25,10 +25,11 @@ Now you can have fun with your objects passed everywhere in your JavaFX Applicat
 
 #### 1- Create Bundle Object
 
-In order to pass some parameters you need to create an object called `FXBundle`, this on object will be passed between the controllers,
+To pass some parameters you need to create an object named `FXBundle`, this object will be transferred between the controllers,
 to create this object you have two options:
+
 ##### 1- The Builder Way:
-You can use the Builder Object of this FXBundle and then use this builder to 
+You can use the Builder Object of this FXBundle and next use this builder to  populate this bundle with any parameters
 
 ````java
 // create new Builder instance.
@@ -38,7 +39,7 @@ FXBundle bundle = bundleBuilder.build();
 ````
 
 ##### 1- The Map Way:
-another way to create the FXBundle Object is throught a constructor that accept a map of type String => Object 
+Another way to build the FXBundle Object is throughout a constructor that receives a map of type String => Object 
 
 ````java
 // create a simple hash map.
@@ -48,7 +49,7 @@ FXBundle bundle = new FXBundle(map);
 ````
 
 #### 2- Fill out the Bundle
-you can fill out the bundle object from the map passed by the default `put` function like the following:
+You can fill out the bundle object from the map passed by the default `put` function like the following:
 
 ````java
 // create a simple hash map.
@@ -60,7 +61,7 @@ map.put("id", 12);
 FXBundle bundle = new FXBundle(map);
 ````
 
-or throughout the Builder object using the `putExtra` function that let you pass any kind of object like the following:
+Or throughout the Builder object using the `putExtra` function that let you pass any sort of object like the following:
 
 ````java
 FXBundle bundle = new FXBundle.Builder()
@@ -71,7 +72,7 @@ FXBundle bundle = new FXBundle.Builder()
 ````
 
 #### 3- Pass the Bundle
-In the final step, you can simply pass this object in the 2nd parameter of the `load` 
+In the pre-final step, you can directly pass this object in the 2nd parameter of the `load` 
 function from the `FXMLLoader` like this:
 
 ```java
@@ -83,9 +84,9 @@ Pane pane = FXMLLoader.load(..., bundle);
 ```
 
 #### 4 - Get back your passed things
-The controller that you are passing to it the bundle should implements the `Initializable` interface,
-and at that stage, inside the `initialize` method implemented by the interface `Initializable`, you have to
-case the second parameter which is of type `ResourceBundle` into our FXBundle, here is an example:
+The controller that you are passing to it the bundle should implement the `Initializable` interface,
+at that stage, inside the `initialize` method implemented by the last interface, you have to cast the second parameter which is of type `ResourceBundle` into our `FXBundle`, here is an example:
+
 ```java
 
 public void initialize(URL location, ResourceBundle resources) {
@@ -93,16 +94,27 @@ public void initialize(URL location, ResourceBundle resources) {
         String userName = bundle.getStringExtra("username");
         // do what ever you want with the received params. 
 }
+```
 
-``` 
+After you got your passed bundle, you can take back your parameters with getters of the `FXBundle` class. 
  
 #### 5- Extends the FXBundleController (Optional) 
+We could make the same thing with extending another class which Called `FXBundleController` in which you gonna
+implement a method called  `initializeController` in which you will get a fresh FXBundle you just passed. 
 
+```java
+public class Controller extends FXBundleController {
+
+    public void initializeController(URL location, FXBundle bundle) {
+        String userName = bundle.getStringExtra("username");
+        // do what ever you want with the received params.
+    }
+}
+```
 
 ## Authors
 
 * **Younes Charfaoui** - *Initial work* - [Younes Charfaoui](https://github.com/Younes-Charfaoui)
-*  **Houari Zegai** - *Testing* - [Houari Zegai](https://github.com/HouariZegai)
 
 See also the list of [contributors](https://github.com/Younes-Charfaoui/JavaFX-Bundle/graphs/contributors) who participated in this project.
 
