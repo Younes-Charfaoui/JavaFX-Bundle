@@ -64,13 +64,15 @@ or throughout the Builder object using the `putExtra` function that let you pass
 
 ````java
 FXBundle bundle = new FXBundle.Builder()
-                .putExtra("hi", "hi")
-                .putExtra("int", 2)
+                .putExtra("username", "hi")
+                .putExtra("password", "12345678abcd")
+                .putExtra("id", 3)
                 .build();
 ````
 
 #### 3- Pass the Bundle
-In the final step, you can simply pass this object in the 2nd parameter of the `load` function from the FXMLLoader
+In the final step, you can simply pass this object in the 2nd parameter of the `load` 
+function from the `FXMLLoader` like this:
 
 ```java
 FXBundle bundle = new FXBundle.Builder()
@@ -81,8 +83,19 @@ Pane pane = FXMLLoader.load(..., bundle);
 ```
 
 #### 4 - Get back your passed things
- 
+The controller that you are passing to it the bundle should implements the `Initializable` interface,
+and at that stage, inside the `initialize` method implemented by the interface `Initializable`, you have to
+case the second parameter which is of type `ResourceBundle` into our FXBundle, here is an example:
+```java
 
+public void initialize(URL location, ResourceBundle resources) {
+        FXBundle bundle = (FXBundle) resources;
+        String userName = bundle.getStringExtra("username");
+        // do what ever you want with the received params. 
+}
+
+``` 
+ 
 #### 5- Extends the FXBundleController (Optional) 
 
 
